@@ -1,0 +1,10 @@
+I0208 05:23:34.001406       1 log_file.go:93] Set log file max size to 104857600
+I0208 05:23:34.001857       1 controller.go:126] "Starting Antrea Controller" version="v2.3.0-dev-76d1e48f.dirty"
+I0208 05:23:34.001873       1 controller.go:127] "I am the task's log line!" gh username="mviswanathsai" pod name="kube-system/antrea-controller-594cdb554f-mgp85"
+I0208 05:23:34.001894       1 client.go:89] No kubeconfig file was specified. Falling back to in-cluster config
+I0208 05:23:34.008347       1 selfsignedcert_provider.go:281] "Writing certificate and key to the cert directory"
+I0208 05:23:34.265164       1 handler.go:286] Adding GroupVersion controlplane.antrea.io v1beta2 to ResourceManager
+I0208 05:23:34.265524       1 handler.go:286] Adding GroupVersion system.antrea.io v1beta1 to ResourceManager
+I0208 05:23:34.266565       1 handler.go:286] Adding GroupVersion stats.antrea.io v1alpha1 to ResourceManager
+I0208 05:23:34.267633       1 prometheus.go:124] Initializing prometheus metrics
+I0208 05:23:34.267657       1 log_file.go:121] Starting log file monitoring. Maximum log file number is 4
