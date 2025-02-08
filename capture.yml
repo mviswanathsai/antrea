@@ -1,0 +1,19 @@
+apiVersion: crd.antrea.io/v1alpha1
+kind: PacketCapture
+metadata:
+  name: pc-lfx-mentorship
+spec:
+  timeout: 300
+  captureConfig:
+    firstN:
+      number: 10
+  source:
+    pod:
+      namespace: lfx-mentorship
+      name: antrea-toolbox-64f8dd8f4f-dqfgs
+  destination:
+  # Available options for source/destination could be `pod` (a Pod), `ip` (a specific IP address). These 2 options are mutually exclusive.
+    ip: 8.8.8.8
+  packet:
+    ipFamily: IPv4
+    protocol: ICMP # support arbitrary number values and string values in [TCP,UDP,ICMP] (case insensitive)
