@@ -1,0 +1,36 @@
+apiVersion: crd.antrea.io/v1alpha1
+kind: PacketCapture
+metadata:
+  creationTimestamp: "2025-02-08T05:51:02Z"
+  generation: 1
+  name: pc-lfx-mentorship
+  resourceVersion: "5379"
+  uid: 4e1b7fc9-cf04-4278-99e5-dc04dcf0c5b7
+spec:
+  captureConfig:
+    firstN:
+      number: 10
+  destination:
+    ip: 8.8.8.8
+  packet:
+    ipFamily: IPv4
+    protocol: ICMP
+  source:
+    pod:
+      name: antrea-toolbox-64f8dd8f4f-dqfgs
+      namespace: lfx-mentorship
+  timeout: 300
+status:
+  conditions:
+  - lastTransitionTime: "2025-02-08T05:51:02Z"
+    message: ""
+    reason: Started
+    status: "True"
+    type: PacketCaptureStarted
+  - lastTransitionTime: "2025-02-08T05:51:54Z"
+    message: ""
+    reason: Succeed
+    status: "True"
+    type: PacketCaptureComplete
+  filePath: antrea-agent-969tf:/tmp/antrea/packetcapture/packets/pc-lfx-mentorship.pcapng
+  numberCaptured: 10
